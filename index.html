@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>myfawlt — Minecraft Plugins, Mods & Website Structures</title>
+  <meta name="description" content="Custom Minecraft server plugins, mods and non-hosted website structures. Built to your version, tested before you pay. Discord: myfawlt." />
+  <meta name="theme-color" content="#F2EFE9" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2EFE9'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' text-anchor='middle' fill='%231A1917'%3Em%3C/text%3E%3C/svg%3E" />
+  <noscript><style>.intro,.cursor{display:none!important}.gate__actions,.gate__check,.gate__progress,.gate__hint{display:none!important}</style></noscript>
+</head>
+<body class="locked">
+  <a class="skip-link" href="#work">Skip to content</a>
+
+  <!-- Terms gate: must be accepted before the site is revealed. Nothing is stored. -->
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" aria-describedby="gateDesc">
+    <div class="gate__panel">
+      <p class="label">Before you preview</p>
+      <h2 class="gate__title" id="gateTitle">Read first.</h2>
+      <p class="gate__desc" id="gateDesc">
+        This site sets no cookies, runs no analytics, and stores nothing about you.
+        To view the work, read and accept the terms below. If you do not agree, please close the page.
+      </p>
+
+      <div class="gate__scroll" id="gateScroll" tabindex="0" aria-label="Terms and policies">
+        <div class="terms" id="termsContent">
+          <h3>1. Acceptance &amp; eligibility</h3>
+          <p>By clicking “I agree”, you accept these Terms, the No-Refund Policy, and the Privacy Notice. If you are under 18 (or the age of majority where you live), you must have a parent or guardian accept for you. If you do not agree, do not use this site or commission work.</p>
+
+          <h3>2. What I sell</h3>
+          <p>Custom digital commissions only: Minecraft server plugins, Minecraft mods, and non-hosted website front-end structures. Each item is built to the version and specification you provide. Hosting, server setup, and third-party accounts are not included unless explicitly agreed in writing.</p>
+
+          <h3>3. How an order works</h3>
+          <p>You send the idea, version, and requirements on Discord (<strong>myfawlt</strong>). I build it first, then show it tested/running. Once you approve, you pay, and I deliver the files. Typical projects are <strong>$10–20</strong> depending on size. Payment is accepted via gift cards or subscriptions, as agreed before work starts.</p>
+
+          <h3>4. All sales final — no refunds</h3>
+          <p>Because every item is custom digital work, <strong>all sales are final</strong>. Once you have seen it tested, approved it, paid, and received the files, there are no refunds, returns, or chargebacks. If the item worked when tested and you later break it, misconfigure it, modify it, lose it, or use it on an incompatible server/version, that is your responsibility and no refund is owed. To the maximum extent permitted by law, you waive any right to a refund after approval and delivery. Nothing in these terms removes any mandatory consumer rights that cannot legally be waived in your country.</p>
+
+          <h3>5. Testing, approval &amp; delivery</h3>
+          <p>You are responsible for reviewing the test/demo before paying. Your approval means the item meets your requested specification. Risk and responsibility pass to you on delivery. Keep your own backups. I may help with reasonable setup questions, but ongoing support, updates, and fixes after delivery are separate paid work unless agreed otherwise.</p>
+
+          <h3>6. Your responsibilities</h3>
+          <p>You must provide accurate requirements, use the correct Minecraft/server version, maintain backups, and test in a safe environment before going live. You are responsible for your server, players, data, and any conflicts with other plugins/mods. You may not use the work for illegal activity, to harm others, or to violate Minecraft’s EULA or any platform’s rules.</p>
+
+          <h3>7. License &amp; ownership</h3>
+          <p>After full payment you receive a non-exclusive, non-transferable license to use the delivered files for your own server or site. You may not resell, redistribute, leak, or claim the work as your own creation. I retain the right to reuse general knowledge, techniques, and non-client-specific code. Client names, server names, and private details are not shared without permission.</p>
+
+          <h3>8. Third parties &amp; Minecraft</h3>
+          <p>This site is not affiliated with Mojang, Microsoft, Minecraft, Discord, or any gift-card/subscription provider. “Minecraft” is a trademark of Mojang/Microsoft. You are responsible for complying with their terms. I am not responsible for third-party services, accounts, payments, or outages.</p>
+
+          <h3>9. No warranty after acceptance</h3>
+          <p>Work is tested before delivery, but after your acceptance it is provided “as is”. To the maximum extent permitted by law, I disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. I do not guarantee uninterrupted operation, compatibility with future updates, or that every edge case is free of defects.</p>
+
+          <h3>10. Limitation of liability</h3>
+          <p>To the maximum extent permitted by law, I am not liable for indirect, incidental, special, consequential, or punitive damages, or for lost profits, data, players, revenue, or server downtime. My total liability for any claim is limited to the amount you actually paid for the specific item giving rise to the claim.</p>
+
+          <h3>11. Indemnity</h3>
+          <p>You agree to defend, indemnify, and hold me harmless from claims, damages, losses, and expenses (including reasonable legal fees) arising from your server/site, your use or misuse of the work, your breach of these terms, or your violation of any law or third-party right.</p>
+
+          <h3>12. Disputes &amp; governing law</h3>
+          <p>Contact me on Discord first and try to resolve any issue in good faith. To the extent permitted by law, disputes are governed by the laws of Libya, and the courts of Tripoli, Libya have exclusive jurisdiction, unless mandatory law in your country requires otherwise. You waive any right to participate in a class action against me to the extent permitted by law.</p>
+
+          <h3>13. Privacy — nothing stored</h3>
+          <p>This site does not use cookies, localStorage, sessionStorage, IndexedDB, analytics, fingerprinting, or advertising trackers. It does not create accounts or collect personal data. The “copy Discord” button only writes the handle to your clipboard when you click it. The clock uses your device time. Acceptance of these terms is kept in memory only for this page view and is not saved; you will be asked again on refresh. Any standard server logs kept by a hosting provider are outside this site’s control.</p>
+
+          <h3>14. Changes, severability &amp; entire agreement</h3>
+          <p>I may update these terms; the version shown when you accept applies to that order. If any clause is unenforceable, the rest remains in effect. These terms, plus any written order details agreed on Discord, are the entire agreement for the commission.</p>
+
+          <h3>15. Contact</h3>
+          <p>Discord: <strong>myfawlt</strong>. By accepting, you confirm you have read, understood, and agreed to everything above.</p>
+        </div>
+      </div>
+
+      <div class="gate__progress" aria-hidden="true"><span id="gateBar"></span></div>
+      <p class="gate__hint" id="gateHint">Scroll to the end to unlock the agreement.</p>
+
+      <label class="gate__check">
+        <input type="checkbox" id="gateCheck" disabled />
+        <span>I have read and agree to the Terms, the No-Refund Policy, and the Privacy Notice.</span>
+      </label>
+
+      <div class="gate__actions">
+        <button class="gate__decline" id="gateDecline" type="button">I don’t agree</button>
+        <button class="gate__accept" id="gateAccept" type="button" disabled>I agree — enter site</button>
+        <button class="gate__close" id="gateClose" type="button" hidden>Close</button>
+      </div>
+      <p class="gate__note">No cookies · No tracking · Nothing stored</p>
+      <noscript><p class="gate__note">JavaScript is required to accept these terms and enter the site. The full terms are above.</p></noscript>
+    </div>
+  </div>
+
+  <!-- Page-load intro -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <span class="intro__mark">myfawlt</span>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__label">View</span>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand link" href="#top" data-scroll>myfawlt</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a class="link" href="#work" data-scroll>Work</a>
+      <a class="link" href="#about" data-scroll>About</a>
+      <a class="link" href="#contact" data-scroll>Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container">
+        <p class="label hero__label" data-reveal>Minecraft developer · Web builds</p>
+        <h1 class="hero__name">
+          <span class="line"><span class="line__inner">myfawlt</span></span>
+        </h1>
+        <p class="hero__desc">
+          <span class="line"><span class="line__inner">Custom Minecraft plugins, mods &amp; website structures —</span></span>
+          <span class="line"><span class="line__inner">built to your version, tested before you pay.</span></span>
+        </p>
+        <div class="hero__meta" data-reveal>
+          <span class="availability"><span class="availability__dot" aria-hidden="true"></span>Available for work — 2026</span>
+          <span class="hero__price">Projects $10–20 · Gift cards or subscriptions</span>
+        </div>
+      </div>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="label">01 — Selected Work</p>
+          <h2 class="section__title" id="work-title">What I build</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="card card--wide" data-reveal data-project="plugins" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Custom Server Plugins">
+            <div class="card__media" data-cursor="view">
+              <div class="card__parallax">
+                <canvas data-scene="plugins" role="img" aria-label="Matte ceramic and concrete server blocks with a terracotta top block, soft studio light"></canvas>
+                <div class="scene-fallback" aria-hidden="true">
+                  <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="250" fill="#F2EFE9"/><ellipse cx="200" cy="205" rx="120" ry="16" fill="#D9D4CA"/><rect x="120" y="140" width="160" height="52" rx="8" fill="#D9D4CA"/><rect x="140" y="96" width="112" height="44" rx="7" fill="#F7F4EE"/><rect x="176" y="60" width="48" height="40" rx="6" fill="#B4532A"/></svg>
+                </div>
+              </div>
+              <span class="card__view">View project <span aria-hidden="true">→</span></span>
+            </div>
+            <div class="card__meta">
+              <h3 class="card__title">Custom Server Plugins</h3>
+              <p class="card__sub">Minecraft · Service · Ongoing</p>
+            </div>
+          </article>
+
+          <article class="card card--tall" data-reveal data-project="mods" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Custom Minecraft Mods">
+            <div class="card__media" data-cursor="view">
+              <div class="card__parallax">
+                <canvas data-scene="mods" role="img" aria-label="Matte ceramic ring and terracotta sphere on warm paper, soft contact shadows"></canvas>
+                <div class="scene-fallback" aria-hidden="true">
+                  <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#F2EFE9"/><ellipse cx="140" cy="300" rx="95" ry="15" fill="#D9D4CA"/><circle cx="140" cy="235" r="72" fill="none" stroke="#F7F4EE" stroke-width="34"/><circle cx="225" cy="285" r="28" fill="#B4532A"/></svg>
+                </div>
+              </div>
+              <span class="card__view">View project <span aria-hidden="true">→</span></span>
+            </div>
+            <div class="card__meta">
+              <h3 class="card__title">Custom Minecraft Mods</h3>
+              <p class="card__sub">Minecraft · Service · Ongoing</p>
+            </div>
+          </article>
+
+          <article class="card card--mid" data-reveal data-project="websites" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Website Structure">
+            <div class="card__media" data-cursor="view">
+              <div class="card__parallax">
+                <canvas data-scene="websites" role="img" aria-label="Stack of paper wireframe sheets with a small terracotta mark, soft studio light"></canvas>
+                <div class="scene-fallback" aria-hidden="true">
+                  <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#F2EFE9"/><ellipse cx="200" cy="240" rx="130" ry="16" fill="#D9D4CA"/><rect x="100" y="120" width="200" height="120" rx="4" fill="#F7F4EE" stroke="#D9D4CA"/><rect x="118" y="138" width="164" height="18" fill="none" stroke="#6E6A63"/><rect x="118" y="166" width="100" height="56" fill="none" stroke="#6E6A63"/><rect x="228" y="166" width="54" height="56" fill="none" stroke="#6E6A63"/><circle cx="284" cy="147" r="6" fill="#B4532A"/></svg>
+                </div>
+              </div>
+              <span class="card__view">View project <span aria-hidden="true">→</span></span>
+            </div>
+            <div class="card__meta">
+              <h3 class="card__title">Website Structure</h3>
+              <p class="card__sub">Web · Non-hosted · Ongoing</p>
+            </div>
+          </article>
+
+          <article class="card card--push" data-reveal data-project="smp" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View SMP Plugin Commissions">
+            <div class="card__media" data-cursor="view">
+              <div class="card__parallax">
+                <canvas data-scene="smp" role="img" aria-label="Concrete voxel block with a small terracotta flag, soft contact shadow"></canvas>
+                <div class="scene-fallback" aria-hidden="true">
+                  <svg viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="225" fill="#F2EFE9"/><ellipse cx="200" cy="190" rx="100" ry="14" fill="#D9D4CA"/><rect x="150" y="105" width="100" height="70" rx="8" fill="#D9D4CA"/><rect x="196" y="45" width="4" height="62" fill="#1A1917"/><rect x="200" y="48" width="34" height="20" rx="2" fill="#B4532A"/></svg>
+                </div>
+              </div>
+              <span class="card__view">View project <span aria-hidden="true">→</span></span>
+            </div>
+            <div class="card__meta">
+              <h3 class="card__title">SMP Plugin Commissions</h3>
+              <p class="card__sub">Past work · 5 custom plugins</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--tight" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="label">02 — How it works</p>
+          <h2 class="section__title" id="process-title">Build first. Pay after.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step__num">01</span>
+            <h3 class="step__title">Tell me what you need</h3>
+            <p class="step__text">Send the idea, the Minecraft version (or site layout), and any must-have details on Discord.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">02</span>
+            <h3 class="step__title">I build &amp; test it</h3>
+            <p class="step__text">I make it before you pay, then show it running and tested so you know it’s real and working.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">03</span>
+            <h3 class="step__title">Pay &amp; receive</h3>
+            <p class="step__text">Once you approve, pay via gift card or subscription and I hand over the files. $10–20 depending on size. All sales final.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="label">03 — About</p>
+          <h2 class="section__title" id="about-title">A bit about me</h2>
+        </div>
+        <div class="about-grid">
+          <figure class="about__portrait" data-reveal>
+            <canvas data-scene="portrait" role="img" aria-label="Matte ceramic bust on a concrete plinth with a small terracotta detail, soft studio light"></canvas>
+            <div class="scene-fallback" aria-hidden="true">
+              <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="400" fill="#F2EFE9"/><ellipse cx="150" cy="350" rx="95" ry="14" fill="#D9D4CA"/><rect x="95" y="320" width="110" height="22" rx="5" fill="#D9D4CA"/><path d="M90 320 C90 250 120 235 150 235 C180 235 210 250 210 320 Z" fill="#F7F4EE"/><circle cx="150" cy="175" r="58" fill="#F7F4EE"/><circle cx="188" cy="255" r="9" fill="#B4532A"/></svg>
+            </div>
+          </figure>
+          <div class="about__body">
+            <p class="about__bio" data-reveal>
+              I’m myfawlt — a Minecraft developer who builds custom server plugins and mods, plus clean website structures.
+              Tell me the version and the feature; I’ll build it first, show it running, and only then take payment.
+              No drawn packs or shortcuts — just pure added functionality, made for what you want.
+            </p>
+            <div class="about__skills" data-reveal>
+              <p class="label">Skills / tools</p>
+              <ul class="skills">
+                <li>Spigot / Paper plugins</li>
+                <li>Forge / Fabric mods</li>
+                <li>Java</li>
+                <li>HTML / CSS / JS</li>
+                <li>Version-specific builds</li>
+                <li>Live testing &amp; demos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="label">04 — Experience</p>
+          <h2 class="section__title" id="experience-title">Track record</h2>
+        </div>
+        <div class="exp" data-reveal>
+          <div class="exp__row exp__row--head" aria-hidden="true">
+            <span>Role</span><span>Focus</span><span>Track record</span>
+          </div>
+          <div class="exp__row">
+            <span class="exp__role">Plugin Developer</span>
+            <span class="exp__focus">SMP commissions</span>
+            <span class="exp__note">5 custom plugins delivered</span>
+          </div>
+          <div class="exp__row">
+            <span class="exp__role">Mod Developer</span>
+            <span class="exp__focus">Custom requests</span>
+            <span class="exp__note">Any version, pure functionality</span>
+          </div>
+          <div class="exp__row">
+            <span class="exp__role">Web Structure Builder</span>
+            <span class="exp__focus">Front-end delivery</span>
+            <span class="exp__note">Non-hosted, ready to deploy</span>
+          </div>
+          <div class="exp__row">
+            <span class="exp__role">Build-first workflow</span>
+            <span class="exp__focus">Direct clients</span>
+            <span class="exp__note">Tested before payment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--dark" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="label label--light" data-reveal>05 — Contact</p>
+        <h2 class="contact__title" id="contact-title" data-reveal>Let’s work<br />together</h2>
+        <p class="contact__sub" data-reveal>Tell me what you need and the version. I’ll build it, test it, then we handle payment.</p>
+
+        <button class="discord-btn" id="discordBtn" type="button" data-reveal aria-label="Copy Discord username myfawlt">
+          <span class="discord-btn__label">Discord</span>
+          <span class="discord-btn__handle">myfawlt</span>
+          <span class="discord-btn__hint" id="discordHint">Click to copy</span>
+        </button>
+
+        <div class="contact__facts" data-reveal>
+          <span>Projects $10–20</span>
+          <span>Gift cards or subscriptions</span>
+          <span>Built &amp; tested before you pay</span>
+          <span>All sales final · No refunds after approval</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> myfawlt</span>
+      <span class="footer__privacy">No cookies · No tracking · Nothing stored</span>
+      <button class="footer__terms link" id="termsOpen" type="button">Terms &amp; privacy</button>
+      <span class="footer__time">Local time — <time id="clock">00:00:00</time></span>
+    </div>
+  </footer>
+
+  <!-- Project dialog -->
+  <dialog class="dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <button class="dialog__close" id="dialogClose" type="button" aria-label="Close dialog">×</button>
+    <p class="label" id="dialogCategory">Service</p>
+    <h3 class="dialog__title" id="dialogTitle">Title</h3>
+    <p class="dialog__meta" id="dialogMeta">Meta</p>
+    <p class="dialog__desc" id="dialogDesc">Description</p>
+    <ul class="dialog__list" id="dialogList"></ul>
+    <div class="dialog__footer">
+      <span class="dialog__price" id="dialogPrice">$10–20 depending on scope</span>
+      <button class="dialog__cta" id="dialogCta" type="button">Copy Discord: myfawlt</button>
+    </div>
+    <p class="dialog__terms">All sales final after approval. By commissioning you agree to the site terms.</p>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/CustomEase.min.js"></script>
+  <script src="scenes.js"></script>
+  <script src="terms.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
